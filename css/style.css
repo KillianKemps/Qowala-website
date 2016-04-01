@@ -1,5 +1,6 @@
-body {
-	background-color: white;
+html{
+  background-image: url(../img/photo-1444041401850-6d9f537550c4.jpe);
+  background-size: cover;
 	text-align: center;
 	font-family: sans-serif;
 }
