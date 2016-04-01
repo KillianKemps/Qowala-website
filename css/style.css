@@ -36,3 +36,15 @@ h1 img {
 li {
 	display: inline-block;
 }
+
+span {
+  font-family: 'droid_sansbold', sans-serif;
+}
+
+a {
+  color: white;
+}
+
+span a {
+  text-decoration: none;
+}
