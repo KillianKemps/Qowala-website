@@ -1,9 +1,11 @@
 body {
 	background-color: white;
+	text-align: center;
+	font-family: sans-serif;
 }
 
 h1 img {
-	width: 100%;
+	width: 800px;
 }
 
 li {
