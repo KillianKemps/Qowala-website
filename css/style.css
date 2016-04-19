@@ -33,6 +33,10 @@ h1 img {
 	width: 800px;
 }
 
+ul {
+  padding-left: 0px;
+}
+
 li {
 	display: inline-block;
 }
@@ -47,4 +51,8 @@ a {
 
 span a {
   text-decoration: none;
+}
+
+.screenshot {
+  width: 750px;
 }
