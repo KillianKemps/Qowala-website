@@ -221,3 +221,18 @@ footer .footer_footer a:hover {
     background-position: center -200px;
   }
 }
+
+@media screen and (max-width: 1140px) {
+  main {
+    height: 700px;
+  }
+  main img.screenshot {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  main {
+    height: 650px;
+  }
+}
