@@ -1,58 +1,223 @@
 @font-face {
-    font-family: 'droid_sansregular';
-    src: url('./fonts/DroidSans-webfont.eot');
-    src: url('./fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/DroidSans-webfont.woff') format('woff'),
-         url('./fonts/DroidSans-webfont.ttf') format('truetype'),
-         url('./fonts/DroidSans-webfont.svg#droid_sansregular') format('svg');
+    font-family: 'source_sans_pro';
+    src: url('../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'droid_sansbold';
-    src: url('./fonts/DroidSans-Bold-webfont.eot');
-    src: url('./fonts/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/DroidSans-Bold-webfont.woff') format('woff'),
-         url('./fonts/DroidSans-Bold-webfont.ttf') format('truetype'),
-         url('./fonts/DroidSans-Bold-webfont.svg#droid_sansbold') format('svg');
-    font-weight: normal;
+    font-family: 'source_sans_pro';
+    src: url('../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/Source_Sans_Pro/SourceSansPro-Light.ttf');
+    font-weight: 100;
     font-style: normal;
 }
 
 html{
-  background-image: url(../img/photo-1444041401850-6d9f537550c4.jpeg);
-  background-size: cover;
+  background: url(../img/header-bg.jpg);
+  background-size: 125% auto;
+  background-position: 0px -200px;
+  background-repeat: no-repeat;
 	text-align: center;
-  font-family: 'droid_sansregular', sans-serif;
+  font-family: 'source_sans_pro', sans-serif;
   color: white;
   font-size: 1.4em;
 }
 
-h1 img {
-	width: 800px;
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 10px -5px #555;
+  text-align: left;
+  padding: 20px;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 5;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
 }
 
 ul {
-  padding-left: 0px;
+  margin: 0;
+  padding: 0;
 }
 
-li {
-	display: inline-block;
+header h1 {
+  display: inline-block;
+  height: 100%;
 }
 
-span {
-  font-family: 'droid_sansbold', sans-serif;
+header h1 img {
+  width: auto;
+  height: 100%;
 }
 
-a {
-  color: white;
+header nav {
+  display: inline-block;
+  float: right;
+  text-transform: uppercase;
+  margin: 6.5px auto;
 }
 
-span a {
+header nav a {
+  color: #21a868;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+button {
+  text-transform: uppercase;
+  background-color: #21a868;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+}
+
+header nav button {
+  padding: 10px 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+main {
+  margin-top: 90px;
+  perspective: 1000px;
+  padding-top: 60px;
+  height: 750px;
+  position: relative;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.15);
+}
+
+main h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+main p {
+  max-width: 600px;
+  margin: auto;
+  margin: 30px auto;
+}
+
+main button {
+  padding: 15px 35px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main img.screenshot {
+  width: 950px;
+  display: block;
+  margin: auto;
+  transform: rotateX(30deg);
+  margin-top: 100px;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.5)
+}
+footer {
+  background-color: #27a967;
+  padding-top: 110px;
+  position: relative;
+}
+footer:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/footer-bg.jpg) no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.15;
+  z-index: 1;
+}
+footer * {
+  position: relative;
+  z-index: 2;
+}
+footer h2 {
+  font-weight: lighter;
+}
+footer .team li {
+  display: inline-block;
+  width: 18%;
+  margin: 0 2%;
+  vertical-align: top;
+}
+footer li figure {
+  margin: 0;
+}
+footer li figure svg {
+  width: 45%;
+}
+footer li figure figcaption .name {
+  text-transform: uppercase;
+}
+footer li figure figcaption .title {
+  font-size: 12px;
+  font-weight: bold;
+}
+footer li figure figcaption .links {
+  font-size: 14px;
+}
+footer li figure figcaption .links li {
+  font-size: 13px;
+  width: auto;
+  margin: 0 15px;
+}
+footer a {
+  color: #fff;
   text-decoration: none;
 }
+footer > ul {
+  padding: 30px 0;
+}
+footer .footer_footer {
+  background-color: rgba(0,0,0,0.2);
+  font-size: 12px;
+  padding: 35px 10px;
+  margin-top: 30px;
+}
+footer .footer_footer * {
+  display: inline-block;
+}
+footer .footer_footer p {
+  border-right: 1px solid #fff;
+  margin: 0;
+  padding-right: 50px;
+  margin-right: 40px;
+}
+footer .footer_footer ul {
+  width: 60%;
+  max-width: 640px;
+}
+footer .footer_footer li {
+  padding: 0 10px;
+  display: inline-block;
+  margin: 0 2%;
+}
+footer .footer_footer li:first-child {
+  margin-left: 0;
+}
+footer .footer_footer a:hover {
+  text-decoration: underline;
+}
 
-.screenshot {
-  width: 750px;
+@media screen and (max-width: 1350px) {
+  html {
+    background-size: auto 1200px;
+    background-position: center -200px;
+  }
 }
