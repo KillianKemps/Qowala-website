@@ -82,12 +82,12 @@ button {
   color: #fff;
   border-radius: 5px;
   border: 0;
+  cursor: pointer;
 }
 
 header nav button {
   padding: 10px 25px;
   font-size: 14px;
-  cursor: pointer;
 }
 
 main {
@@ -198,10 +198,11 @@ footer .footer_footer p {
   margin: 0;
   padding-right: 50px;
   margin-right: 40px;
+  width: 100px;
 }
 footer .footer_footer ul {
-  width: 60%;
-  max-width: 640px;
+  width: 250px;
+  text-align: left;
 }
 footer .footer_footer li {
   padding: 0 10px;
